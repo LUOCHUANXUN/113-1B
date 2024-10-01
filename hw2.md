@@ -1,17 +1,18 @@
-## PERT/CPM 圖
-
-```mermaid
-graph TD;
-    A[1. 研擬計畫] --> B[2. 任務分配];
-    A --> C[3. 取得硬體];
-    B --> D[4. 程式開發];
-    C --> E[5. 安裝硬體];
-    D --> F[6. 程式測試];
-    D --> G[7. 撰寫使用手冊];
-    E --> H[8. 轉換檔案];
-    F --> I[9. 系統測試];
-    H --> I;
-    G --> J[10. 使用者訓練];
-    H --> J;
-    I --> K[11. 使用者測試];
-    J --> K;
+gantt
+    title 11項任務的甘特圖
+    dateFormat  YYYY-MM-DD
+    section 研擬階段
+    研擬計畫        :a1, 2024-10-01, 1d
+    任務分配        :after a1, 4d
+    取得硬體        :after a1, 17d
+    section 開發階段
+    程式開發        :after a1, 70d
+    安裝硬體        :after a1, 10d
+    section 測試階段
+    程式測試        :after a1, 30d
+    撰寫使用手冊    :after a1, 25d
+    轉換檔案        :after a1, 20d
+    系統測試        :after a1, 25d
+    section 使用者階段
+    使用者訓練      :after a1, 20d
+    使用者測試      :after a1, 25d
