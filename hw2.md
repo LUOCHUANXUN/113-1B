@@ -13,7 +13,7 @@ graph TD;
     H --> J;
     I --> K[使用者測試];
     J --> K;
-```markdown
+
 # 甘特圖
 ```mermaid
 gantt
@@ -32,7 +32,6 @@ gantt
     使用者訓練 :done, after G, 20d
     使用者測試 :done, after H, 25d
 
-```markdown
 # 關鍵路徑
-
+```mermaid
 關鍵路徑為：`1 -> 2 -> 4 -> 6 -> 9 -> 11`，總耗時為 146 天。
